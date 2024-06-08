@@ -110,7 +110,7 @@ footer {
 /* IMAGES
 ----------------------------------------------*/
 .res header::before {
-    background: url(../images/piers.jpg) no-repeat center; 
+    background: url(../images/Piers.jpg) no-repeat center; 
     background-size: cover;
     /* Creates a big block for the background */
     content: "";
