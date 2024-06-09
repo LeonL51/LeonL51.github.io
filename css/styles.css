@@ -48,7 +48,7 @@ a:hover {
 /* IMAGES
 ----------------------------------------------*/
 .home_image {
-    background-image: url('images/Nature.jpg') no-repeat center; 
+    background-image: url('https://LeonL51.github.io/personal-site/LeonL51.github.io/images/Piers.jpg') no-repeat center; 
     background-size: cover;
     position: relative;
 }
@@ -106,7 +106,7 @@ a:hover {
 /* IMAGES
 ----------------------------------------------*/
 .res header::before {
-    background-image: url('images/Piers.jpg'); 
+    background-image: url('images/Piers.jpg') no-repeat center; 
     background-size: cover;
     /* Creates a big block for the background */
     content: "";
