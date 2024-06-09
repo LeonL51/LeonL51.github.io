@@ -98,7 +98,7 @@ a:hover {
 }
 
 /*media*/
-@media screen and (max-width: 1170px) {
+/* @media screen and (max-width: 1170px) {
     .about {
         padding: 10px;
         margin-left: 150px;
@@ -107,7 +107,7 @@ a:hover {
         padding: 10px;
         margin-right: 150px;
     }
-}
+} */
     
 
 /*                                                      RESUME
