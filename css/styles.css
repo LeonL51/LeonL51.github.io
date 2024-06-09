@@ -34,7 +34,7 @@ a:hover {
 
 /*                                                HOMEPAGE / INDEX PAGE
 ----------------------------------------------*/
-.about{
+.about {
     box-sizing: border-box; 
     background: rgba(255, 255, 255, 0.5);
     max-width: 350px;
@@ -97,8 +97,17 @@ a:hover {
     display: inline-block;
 }
 
-
-
+/*media*/
+@media screen and (max-width: 1170px) {
+    .about {
+        padding: 10px;
+        margin-left: 150px;
+    }
+    .footer {
+        padding: 10px;
+        margin-right: 150px;
+    }
+    
 
 /*                                                      RESUME
 ----------------------------------------------*/
