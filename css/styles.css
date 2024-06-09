@@ -48,7 +48,7 @@ a:hover {
 /* IMAGES
 ----------------------------------------------*/
 .home_image {
-    background-image: url(../images/Nature.jpg) no-repeat center; 
+    background-image: url(images/Nature.jpg) no-repeat center; 
     background-size: cover;
     position: relative;
 }
