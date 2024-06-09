@@ -186,7 +186,7 @@ a:hover {
 /* DASHES 
 ----------------------------------------------*/
 .dash {
-    border: 1px dashed white
+    border: 1px dashed black;
 }
 
 /* EXPERIENCE
