@@ -109,13 +109,13 @@ a:hover {
     background: url('../images/Piers.jpg') no-repeat center; 
     background-size: cover;
     /* Creates a big block for the background */
-    content: "";
+/*     content: "";
     display: block;
     max-width: 2000px;
     height: 400px; 
     margin-top: -20px;
     margin-right: -15px;
-    margin-left: -15px;
+    margin-left: -15px; */
 }
 .background {
     background: rgba(126, 123, 123, 0.3);
