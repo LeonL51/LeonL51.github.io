@@ -108,12 +108,6 @@ a:hover {
         margin-right: 150px;
     }
 }
-
-@media screen and (max-width: 999px) {
-    .about, .contacts {
-        max-width: 275px;
-    }
-}
     
 
 /*                                                      RESUME
