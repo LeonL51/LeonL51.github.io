@@ -85,10 +85,6 @@ a:hover {
 
 /* FOOTER
 ----------------------------------------------*/
-footer {
-    color: lightgrey; 
-}
-
 .contacts{ 
     box-sizing: border-box; 
     background: rgba(255, 255, 255, 0.5);
@@ -110,7 +106,7 @@ footer {
 /* IMAGES
 ----------------------------------------------*/
 .res header::before {
-    background-image: url('../images/piers.jpg') no-repeat center; 
+    background-image: url('personal-site/LeonL51.github.io/images/Piers.jpg') no-repeat center; 
     background-size: cover;
     /* Creates a big block for the background */
     content: "";
