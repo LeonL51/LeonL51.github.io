@@ -48,7 +48,7 @@ a:hover {
 /* IMAGES
 ----------------------------------------------*/
 .home_image {
-    background: url("../images/Nature.pdf") no-repeat center; 
+    background: url('../images/Nature.pdf') no-repeat center; 
     background-size: cover;
     position: relative;
 }
@@ -280,7 +280,7 @@ a:hover {
 /* IMAGES
 ----------------------------------------------*/
 .res header::before{
-    background: url("..images/Piers.jpg") no-repeat center; 
+    background: url('..images/Piers.jpg') no-repeat center; 
     background-size: cover;
     /* Creates a big block for the background */
     content: "";
