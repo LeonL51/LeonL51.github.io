@@ -1,5 +1,4 @@
-/*                                                      LINKS 
-----------------------------------------------*/
+/* LINKS */
 a {
     color: darkgreen;
 }
@@ -7,7 +6,7 @@ a:hover {
     color: burlywood;
     text-decoration: none;
 }
-.btn {
+.btn, .returnbtn {
     background: rgba(244, 255, 255, .5);
     text-decoration: none;
     text-transform: uppercase;
@@ -18,64 +17,72 @@ a:hover {
     line-height: 1;
     border-radius: 4px;
 }
-
 .returnbtn {
-    background: rgba(244, 255, 255, .5);
-    text-decoration: none;
     margin-top: 10px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    display: inline-block;
     padding: 3px;
-    line-height: 1;
-    border-radius: 4px;
 }
 
-
-/*                                                HOMEPAGE / INDEX PAGE
-----------------------------------------------*/
-.about {
+/* HOMEPAGE / INDEX PAGE */
+.about, .contacts {
     box-sizing: border-box; 
     background: rgba(255, 255, 255, 0.5);
-    max-width: 350px;
+    width: 350px;
     height: 550px;
     margin-top: 75px;
-    margin-left: 225px;
     padding: 25px;
     display: inline-block;
 }
+.about {
+    margin-left: 225px;
+}
+.contacts {
+    float: right;
+    margin-right: 225px;
+}
 
-/* IMAGES
-----------------------------------------------*/
+/* IMAGES */
 .home_image {
     background: url('../images/Nature.jpg') no-repeat center; 
     background-size: cover;
     position: relative;
 }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.linkedin {
+    margin-left: 13px; 
+}
+.gmail { 
+    margin-top: 30px;
+}
+.office {
+    margin-top: 25px;
+    margin-right: 13px;
+}
 
-/* TEXTS
-----------------------------------------------*/
+/* TEXTS */
 .text {
-    color:black;
+    color: black;
     padding-left: 10px;
     line-height: 1.4;
 }
-
 .center {
     text-align: center;
-  }
-  
-.indent {
-    text-indent: 12.5px; ;
 }
-
+.indent {
+    text-indent: 12.5px;
+}
 .name {
     color: midnightblue;
     margin: 20px;
     font-style: oblique;
     font-size: 45px;
 }
-
 .role {
     color: midnightblue;
     margin: 20px;
@@ -83,213 +90,21 @@ a:hover {
     font-size: 36px;
 }
 
-/* FOOTER
-----------------------------------------------*/
-.contacts{ 
-    box-sizing: border-box; 
+/* FOOTER */
+.contacts { 
     background: rgba(255, 255, 255, 0.5);
-    width: 350px;
-    float: right;
-    height: 550px;
-    margin-top: 75px;   
-    margin-right: 225px;
-    padding: 10px;
-    display: inline-block;
 }
 
-/*media*/
-@media screen and (max-width: 1250px) {
-    .about {
-        padding: 10px;
-        margin-left: 150px;
-    }
-    .contacts {
-        padding: 10px;
-        margin-right: 150px;
-    }
-}
-@media screen and (max-width: 1120px) {
-    .about, .contacts {
-        width:325px
-    }
-}
-@media screen and (max-width: 1000px) {
-    .about, .contacts {
-        max-width:300px;
-        height: 500px;
-    }
-}
-@media screen and (max-width: 920px) {
-    .about, .contacts {
-        max-width:250px;
-        height: 500px;
-    }
-}
-@media screen and (max-width: 870px) {
-    .about, .contacts {
-        max-width:250px;
-        height: 500px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .about, .contacts {
-        max-width:200px;
-        padding: 5px;
-    }
-}
-@media screen and (max-width: 730px) {
-    .about, .contacts {
-        max-width:150px;
-        height: 400px;
-        padding: 0px;
-    }
-}
-@media screen and (max-width: 630px) {
-    .about, .contacts {
-        max-width:75px;
-        height: 400px;
-        padding: 0px;
-    }
-}
-/* @media screen and (max-width: 700px) {
-    .about{
-        max-width:200px;
-        height: 250px;
-        margin-left: 50px;
-    }
-    .contacts{
-        max-width:200px;
-        height: 250px;
-        margin-right: 100px;
-    }
-} */
-/* @media screen and (min-width: 650px) and (max-width: 919px) {
-    .about, .contacts {
-        height: 500px;
-    }
-} */
-@media screen and (max-width: 849px) {
-    .about, .contacts {
-        height: 500px;
-    }
-}
-@media screen and (min-width: 300px) {
-    .home_image {
-        height:767px;
-    }
-}
-
-/*media*/
-@media screen and (max-width: 1250px) {
-    .about {
-        padding: 10px;
-        margin-left: 150px;
-    }
-    .contacts {
-        padding: 10px;
-        margin-right: 150px;
-    }
-}
-@media screen and (max-width: 1120px) {
-    .about, .contacts {
-        width:325px
-    }
-}
-@media screen and (max-width: 1000px) {
-    .about, .contacts {
-        max-width:300px;
-        height: 500px;
-    }
-}
-@media screen and (max-width: 920px) {
-    .about, .contacts {
-        max-width:250px;
-        height: 500px;
-    }
-}
-@media screen and (max-width: 870px) {
-    .about, .contacts {
-        max-width:250px;
-        height: 500px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .about, .contacts {
-        max-width:200px;
-        padding: 5px;
-    }
-}
-@media screen and (max-width: 730px) {
-    .about, .contacts {
-        max-width:150px;
-        height: 400px;
-        padding: 0px;
-    }
-}
-@media screen and (max-width: 630px) {
-    .about, .contacts {
-        max-width:75px;
-        height: 400px;
-        padding: 0px;
-    }
-}
-/* @media screen and (max-width: 700px) {
-    .about{
-        max-width:200px;
-        height: 250px;
-        margin-left: 50px;
-    }
-    .contacts{
-        max-width:200px;
-        height: 250px;
-        margin-right: 100px;
-    }
-} */
-/* @media screen and (min-width: 650px) and (max-width: 919px) {
-    .about, .contacts {
-        height: 500px;
-    }
-} */
-@media screen and (max-width: 849px) {
-    .about, .contacts {
-        height: 500px;
-    }
-}
-@media screen and (min-width: 300px) {
-    .home_image {
-        height:767px;
-    }
-}
-
-/*media*/
-/* @media screen and (max-width: 1170px) {
-    .about {
-        padding: 10px;
-        margin-left: 150px;
-    }
-    .contacts {
-        padding: 10px;
-        margin-right: 150px;
-    }
-} */
-    
-
-/*                                                      RESUME
-----------------------------------------------*/
-
-/* IMAGES
-----------------------------------------------*/
-.res header::before{
+/* RESUME */
+/* IMAGES */
+.res header::before {
     background: url('../images/Piers.jpg') no-repeat center; 
     background-size: cover;
-    /* Creates a big block for the background */
     content: "";
     display: block;
     max-width: 2000px;
     height: 400px; 
-    margin-top: -20px;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: -20px -15px 0 -15px;
 }
 .background {
     background: rgba(126, 123, 123, 0.3);
@@ -298,25 +113,15 @@ a:hover {
     display: block;
     height: 500px; 
 }
-@media screen and (min-width: 675px) {
-    .res header::before {
-        height: 400px;
-    }
-    h1 {
-        font-size: 10px;
-    }
-}
 
-/* TEXTS
-----------------------------------------------*/
+/* TEXTS */
 .subsections {
     color: darkred;
     font-family: 'Lobster', cursive; 
     font-size: 36px;
     line-height: 1.4;
 }
-
-.res_text{
+.res_text {
     color: grey; 
     padding-left: 10px;
     line-height: 1.4;
@@ -325,7 +130,7 @@ a:hover {
     color: grey;
 }
 .pdf {
-    position:fixed; 
+    position: fixed; 
     top: 5px;
     left: 5px; 
     font-size: 1.1rem;
@@ -333,58 +138,41 @@ a:hover {
     padding: 3px;
 }
 
-/* PROFILE
-----------------------------------------------*/
-.center1 { /* Centers the playing field */
+/* PROFILE */
+.center1 {
     padding: 20px;
     width: 400px;
     margin: 0 auto;
 }
-.res_indent{
-    margin-left: 250px;
-    margin-right: 250px;
+.res_indent {
+    margin: 0 250px;
 } 
 
-/* PROJECTS
-----------------------------------------------*/
-@media screen and (min-width: 1000px) and (max-width: 1250px) {
-    .project_bp{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
-    }
+/* PROJECTS */
+.project_bp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
 }
 
-/* DASHES 
-----------------------------------------------*/
+/* DASHES */
 .dash {
     border: 1px dashed black;
 }
 
-/* EXPERIENCE
-----------------------------------------------*/
-@media screen and (min-width: 1150px) {
-    .work-item {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 10px;
-    }
-    .work-summary p:first-child{
-        margin-top: 0;
-    } 
-}
-
-/* ORIENTATION
-----------------------------------------------*/
+/* EXPERIENCE */
 .work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 10px;
     margin: 30px 0; 
 }
-.work-details p{
+.work-summary p:first-child {
+    margin-top: 0;
+}
+.work-details p {
     margin: 0;
 }
-
 .bullet-margins {
     margin-top: 10px;
 }
-
-
