@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Font Awesome link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6f0f949a64.js" crossorigin="anonymous"></script>
+    <style>
+        #services {  
+            position: relative;
+            background-color: rgb(38, 46, 186);
+            height: 73vh; 
+        }
+
+        .services-container, .portfolio-container {
+            padding: 50px 30px; 
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px; 
+            margin-top: 50px;
+        }
+
+        .service-list div {
+            background: #262626;
+            padding: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            border-right: 10px;
+            transition: background .5s, transform .5s;
+        }
+
+        .service-list div:hover {
+            background: rgb(222, 222, 85);
+        }
+
+        .service-list div i {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .service-list div h2 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .service-list div a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .service-fade {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            background: linear-gradient(to bottom, transparent, #367e89 75%);
+            height: 20%;
+        }
+
+        .work {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform .5s;
+        }
+
+        .work-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px; 
+            margin-top: 50px;
+        }
+
+        .work-fade {
+            position: absolute;
+            height: 20%;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            background: linear-gradient(to bottom, transparent, rgb(40, 104, 40) 90%);
+        }
+
+        .work:hover img {
+            transform: scale(1.1);
+        }
+
+        .work:hover.layer {
+            height: 100%;
+        }
+
+        .layer {
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0,0,0,0.6), yellow);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: center;
+            transition: height 0.5s;
+        }
+
+        .layer h3 {
+            font-weight: 500;
+            margin-bottom: 20px
+        }
+
+        .layer a {
+            margin-top: 20px; 
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 60px;
+            background-color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        #portfolio {
+            position: relative; 
+            height: 80vh; 
+            background-color: #367e89;
+        }
+        .service-box {
+            border-radius: 10px; 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ---------HOME PAGE----------- -->
+    <div id="header">
+        <div class="container">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="img/mount.png" alt="Slide 1" height="100%" width="100%">
+                </div>
+                <div class="slide" style="overflow: hidden;">
+                    <img src="img/high-view.png" alt="Slide 2" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <p class="name">Leon</p>
+            <nav class="nav-items">
+                <ul>
+                    <li><a href="#header" class="nav-links">Home</a></li>
+                    <li><a href="#about" class="nav-links">About</a></li>
+                    <li><a href="#services" class="nav-links">Services</a></li>
+                    <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-links">Contact</a></li>
+                </ul>
+            </nav>   
+        </div>
+        <div class="intro-message">
+            <h1 class="full-stack">Software Engineer</h1>
+            <p>Greetings, I'm <span class="leon">Leon</span> from New York City. Let's connect and discuss how my professional skills and passion can drive success for your team. For more details about my background and qualifications, please scroll down.</p>
+        </div>
+        <p class="welcome" style="font-family: 'Caveat', sans-serif; font-size: 125px; ">Portfolio.</p>
+    </div>
+
+
+    <!-- ------------ABOUT ME SECTION------------- -->
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-me" style="font-family: 'Caveat', sans-serif; font-size: 85px;">About Me</h1>
+                    <p class="self-desc">Lead and collaborated in software projects with various teams to build websites. Consistently diversifying, honing, and employing my skillsets with personal projects and certifications. Open to software engineering roles involving front-end, back-end, full stack web development, and/or AI integration.</p>
+                    <div class="tab-titles">
+                        <div class="tab-links about-1" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links about-2" style="margin-left: 30px;" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links about-3" style="margin-left: 30px;" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="skills">
+                            <ul>
+                                <li><strong>Technical:</strong></li>
+                                <li>Full-stack web development</li>
+                                <li>AI integration</li>
+                                <li>MERN stack</li>
+                                <li>Jira</li>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>JavaScript</li>
+                                <li>mySQL</li>
+                                <li>Bootstrap (framework)</li>
+                                <li>REST APIs</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>Microsoft Office Suite</li>
+                            </ul>
+                            <ul style="margin-left: 6%;">
+                                <li><strong>Soft:</strong></li>
+                                <li>Leadership</li>
+                                <li>Problem-solving</li>
+                                <li>Project Management</li>
+                                <li>Written and Oral Communication</li>
+                            </ul>
+                        </div>
+                        <div id="experience">
+                            <ul>
+                            </ul>
+                        </div>
+                        <div id="education">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------SERVICES---------------- -->
+    <div id="services">
+        <div class="services-container">
+            <h1 style="font-family: 'Caveat', sans-serif; font-size: 75px; text-align: center; margin-top: -20px;">My Services</h1>
+            <div class="service-list" style="margin-top: 15px">
+                <div class="service-box">  
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>wadawnfnlfanlnfleanfleansfkjnaefnsalnfksnfkjnfkjlanglkrjngks dajfnawkjndakwjfnawkfnrfknsekfn</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-box"> 
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>wadawnfnlfanlnfleanfleansfkjnaefnsalnfksnfkjnfkjlanglkrjngk dakwjnfandakjwnfakwndakjnwdkawnfsnrfknsekfn</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-box"> 
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Design</h2>
+                    <p>wadawnfnlfanlnfleanfleansfkjnaefnsalnfksnfkjnfkjlanglkrj dawdawfawawdnnawjfnakjnfaknjdakwfngksnrfknsekfn</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="service-fade"></div>
+    </div>
+    <!-- 
+        Netflix App, InkSmart Website, Blastoise Model 
+    -->
+
+    <!-- --------------PORTFOLIO---------------- -->
+    <div id="portfolio">
+        <div class="portfolio-container">
+            <h1 style="font-family: 'Caveat', sans-serif; font-size: 75px; text-align: center; margin-top: -20px;">My Work</h1>
+            <div class="work-list" style="margin-top: 15px;">
+                <div class="work">
+                    <img src="img/Nature.jpg">
+                    <div class="layer"> 
+                        <h3>Social Media</h3>
+                        <p>adnwnfaojnfakjnfakjdnaknkjafnwjknfa</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/Nature.jpg">
+                    <div class="layer"> 
+                        <h3>Social Media</h3>
+                        <p>adnwnfaojnfakjnfakjdnaknkjafnwjknfa</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/Nature.jpg">
+                    <div class="layer"> 
+                        <h3>Social Media</h3>
+                        <p>adnwnfaojnfakjnfakjdnaknkjafnwjknfa</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-fade"></div>
+    </div>
+
+    <!-- -----------CONTACT------------ -->
+    <div id="contact">
+        <div class="contact-container">
+            <div class="left-contact">
+                <div class="left-contact-container">
+                    <h1 class="contact-me">Contact Me @</h1>
+                    <div>
+                        <div class="contact-flex" style="margin-top: 20px;">
+                            <span class="material-icons icon">send</span>
+                            <p><a href="mailto: leon.lin1509@gmail.com"
+                                class="gmail">
+                                leon.lin1509@gmail.com</a></p>
+                        </div>
+                        <div class="contact-flex" style="margin-top: 20px;">
+                            <span class="material-icons icon">phone</span>
+                            <p><a href=tel:+13473202909 
+                                class="phone">
+                                +1 (347)-320-2909</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-icons contact-flex">
+                        <a href="https://www.linkedin.com/in/leonl-63616b272" class="icon">
+                            <div class="contact-row">
+                                <i class="fab fa-linkedin"></i>
+                                <div class="linkedin-container">
+                                    <p>LinkedIn</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <button id="cv-btn" class="cv-btn">Download CV</button>
+            </div>
+            </div>
+
+            <div class="right-contact">
+                <form action="/send-email" method="POST"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Email"  style="margin-top: 2%;" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message" style="margin-top: 2%;"></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-fade"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
