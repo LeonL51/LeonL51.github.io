@@ -12,148 +12,6 @@
     <!-- Font Awesome link for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/6f0f949a64.js" crossorigin="anonymous"></script>
-    <style>
-        #services {  
-            position: relative;
-            background-color: rgb(38, 46, 186);
-            height: 73vh; 
-        }
-
-        .services-container, .portfolio-container {
-            padding: 50px 30px; 
-        }
-
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px; 
-            margin-top: 50px;
-        }
-
-        .service-list div {
-            background: #262626;
-            padding: 40px;
-            font-size: 13px;
-            font-weight: 300;
-            border-right: 10px;
-            transition: background .5s, transform .5s;
-        }
-
-        .service-list div:hover {
-            background: rgb(222, 222, 85);
-        }
-
-        .service-list div i {
-            font-size: 50px;
-            margin-bottom: 30px;
-        }
-
-        .service-list div h2 {
-            font-size: 30px;
-            font-weight: 500;
-            margin-bottom: 15px;
-        }
-
-        .service-list div a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 12px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        .service-fade {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: white;
-            background: linear-gradient(to bottom, transparent, #367e89 75%);
-            height: 20%;
-        }
-
-        .work {
-            border-radius: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .work img {
-            width: 100%;
-            border-radius: 10px;
-            display: block;
-            transition: transform .5s;
-        }
-
-        .work-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px; 
-            margin-top: 50px;
-        }
-
-        .work-fade {
-            position: absolute;
-            height: 20%;
-            bottom: 0;
-            width: 100%;
-            background-color: white;
-            background: linear-gradient(to bottom, transparent, rgb(40, 104, 40) 90%);
-        }
-
-        .work:hover img {
-            transform: scale(1.1);
-        }
-
-        .work:hover.layer {
-            height: 100%;
-        }
-
-        .layer {
-            width: 100%;
-            height: 0;
-            background: linear-gradient(rgba(0,0,0,0.6), yellow);
-            border-radius: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 0 40px;
-            text-align: center;
-            transition: height 0.5s;
-        }
-
-        .layer h3 {
-            font-weight: 500;
-            margin-bottom: 20px
-        }
-
-        .layer a {
-            margin-top: 20px; 
-            color: red;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 60px;
-            background-color: #fff;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            text-align: center;
-        }
-
-        #portfolio {
-            position: relative; 
-            height: 80vh; 
-            background-color: #367e89;
-        }
-        .service-box {
-            border-radius: 10px; 
-        }
-
-    </style>
 </head>
 <body>
     <!-- ---------HOME PAGE----------- -->
@@ -161,131 +19,95 @@
         <div class="container">
             <div class="slideshow-container">
                 <div class="slide">
-                    <img src="img/mount.png" alt="Slide 1" height="100%" width="100%">
+                    <img src="img/HostView.jpg" alt="Slide 1" height="100%" width="100%">
                 </div>
                 <div class="slide" style="overflow: hidden;">
                     <img src="img/high-view.png" alt="Slide 2" width="100%" height="100%">
                 </div>
             </div>
         </div>
+        <h1 class="portfolio">Portfolio</h1>
         <div class="navbar">
-            <p class="name">Leon</p>
             <nav class="nav-items">
                 <ul>
                     <li><a href="#header" class="nav-links">Home</a></li>
                     <li><a href="#about" class="nav-links">About</a></li>
-                    <li><a href="#services" class="nav-links">Services</a></li>
-                    <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+                    <li><a href="#projects" class="nav-links">Projects</a></li>
                     <li><a href="#contact" class="nav-links">Contact</a></li>
                 </ul>
-            </nav>   
+            </nav>
         </div>
-        <div class="intro-message">
-            <h1 class="full-stack">Software Engineer</h1>
-            <p>Greetings, I'm <span class="leon">Leon</span> from New York City. Let's connect and discuss how my professional skills and passion can drive success for your team. For more details about my background and qualifications, please scroll down.</p>
-        </div>
-        <p class="welcome" style="font-family: 'Caveat', sans-serif; font-size: 125px; ">Portfolio.</p>
+        <img src="img/Barcelona.JPG" class="circle-img">
+        <p class="intro">Leon<br><i style="font-weight: 20px">Software Engineer</i></p>
     </div>
-
 
     <!-- ------------ABOUT ME SECTION------------- -->
     <div id="about">
-        <div class="about-container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="about-me" style="font-family: 'Caveat', sans-serif; font-size: 85px;">About Me</h1>
-                    <p class="self-desc">Lead and collaborated in software projects with various teams to build websites. Consistently diversifying, honing, and employing my skillsets with personal projects and certifications. Open to software engineering roles involving front-end, back-end, full stack web development, and/or AI integration.</p>
-                    <div class="tab-titles">
-                        <div class="tab-links about-1" onclick="opentab('skills')">Skills</div>
-                        <div class="tab-links about-2" style="margin-left: 30px;" onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links about-3" style="margin-left: 30px;" onclick="opentab('education')">Education</div>
-                    </div>
-                    <div class="tab-content">
-                        <div id="skills">
-                            <ul>
-                                <li><strong>Technical:</strong></li>
-                                <li>Full-stack web development</li>
-                                <li>AI integration</li>
-                                <li>MERN stack</li>
-                                <li>Jira</li>
-                                <li>React.js</li>
-                                <li>Node.js</li>
-                                <li>CSS</li>
-                                <li>HTML</li>
-                                <li>JavaScript</li>
-                                <li>mySQL</li>
-                                <li>Bootstrap (framework)</li>
-                                <li>REST APIs</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>Microsoft Office Suite</li>
-                            </ul>
-                            <ul style="margin-left: 6%;">
-                                <li><strong>Soft:</strong></li>
-                                <li>Leadership</li>
-                                <li>Problem-solving</li>
-                                <li>Project Management</li>
-                                <li>Written and Oral Communication</li>
-                            </ul>
-                        </div>
-                        <div id="experience">
-                            <ul>
-                            </ul>
-                        </div>
-                        <div id="education">
-                            <ul>
-                            </ul>
-                        </div>
-                    </div>
+        <h1 class="about-heading">About</h1>
+        <p class="self-desc">I’ve worked on software projects from frontend to backend, usually with small, fast-moving teams. Outside of coding, I like to stay active—mainly hoop when I get the chance. Feel free to check out my work below and hit me up through the contact section. </p>
+        <div>
+            <div id="education" style="margin-top: 1.5vh;">
+                <h1 class="about-sub">Education</h1>
+                <hr class="line">
+                <div class="about-bullets">
+                    <p ><b>St. Lawrence University</b>, <i>B.S. Computer Science</i></p>
+                    <p style="text-indent: 3vw"><u>Coursework</u>: Data Science, Algorithm Analysis, Data Structures, Applied Statistics, Discrete Math, Computer Organization, Calculus</p>
+                    <p><b>Sant'Anna Institute (Study Abroad Program)</b>, <i>Business/Entrepreneurship</i></p>
+                    <p style="text-indent: 3vw"><u>Coursework</u>: Product Management: Food Marketing, Entrepreneurship and the New Economy </p>
+                    <p ><b>LinkedIn</b></p>
+                    <p style="text-indent: 3vw"><u>Certifications</u>: Java, CSS, HTML, JavaScript, Node.js, React.js,REST APIs, mySQL</p>
                 </div>
             </div>
+            <div id="skills" style="margin-top: 1.5vh;">
+                <h1 class="about-sub">Skills</h1>
+                <hr class="line">
+                <div class="about-bullets">
+                    <p><b>Technical</b>: React.js, Node.js, JavaScript, Boostrap(framework), mySQL, Java, Python, REST APIs, Microsoft Office Suite</p>
+                    <p><b>Soft</b>: Leadership, Problem Solving, Business Analysis, Time Management, Project Management, Event Planning, Written and Oral Communication, Team Building</p>
+                </div>
+            </div>
+            <div id="experience" style="margin-top: 1.5vh;">
+                <h1 class="about-sub">Experience</h1>
+                <hr class="line">
+                <div class="about-bullets">
+                    <p>
+                      <b>Software Engineer Intern @ Heroes United Startup</b> 
+                    </p>
+                    <ul style="margin-left: 3vw; list-style-type: disc; list-style-position: inside;">
+                      <li>Led a team of 4 to develop the front end of a subscription-based website to provide various graphical services</li>
+                      <li>Collaborated with the design team to refine concepts and features across approximately 40 web pages, ensuring a UI/UX design that aligns with customer needs to improve usability</li>
+                      <li>Utilized Bootstrap framework, JavaScript, and advanced CSS to efficiently implement functionality, streamline code development, and write cleaner code to achieve the intended results</li>
+                    </ul>
+                  
+                    <p>
+                      <b>Maurer Institute of Leadership Communications, Researcher @ St.Lawrence University</b>
+                    </p>
+                    <ul style="margin-left: 3vw; list-style-type: disc; list-style-position: inside;">
+                      <li>Collaborated with 5 peers to develop an in-depth presentation on how virtual reality can transform St. Lawrence University into a more inclusive community</li>
+                      <li>Surveyed 100+ students and conducted research to analyze the social and mental benefits of virtual reality</li>
+                      <li>Allocated time frames for the team to develop and rehearse a polished presentation delivered to 35+ faculty and alumni</li>
+                    </ul>
+                </div>                  
+            </div>
         </div>
+        <div class="about-fade"></div>
+    </div>
     </div>
 
-    <!-- -------------SERVICES---------------- -->
-    <div id="services">
-        <div class="services-container">
-            <h1 style="font-family: 'Caveat', sans-serif; font-size: 75px; text-align: center; margin-top: -20px;">My Services</h1>
-            <div class="service-list" style="margin-top: 15px">
-                <div class="service-box">  
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>wadawnfnlfanlnfleanfleansfkjnaefnsalnfksnfkjnfkjlanglkrjngks dajfnawkjndakwjfnawkfnrfknsekfn</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="service-box"> 
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Design</h2>
-                    <p>wadawnfnlfanlnfleanfleansfkjnaefnsalnfksnfkjnfkjlanglkrjngk dakwjnfandakjwnfakwndakjnwdkawnfsnrfknsekfn</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="service-box"> 
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Web Design</h2>
-                    <p>wadawnfnlfanlnfleanfleansfkjnaefnsalnfksnfkjnfkjlanglkrj dawdawfawawdnnawjfnakjnfaknjdakwfngksnrfknsekfn</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-        <div class="service-fade"></div>
-    </div>
     <!-- 
         Netflix App, InkSmart Website, Blastoise Model 
     -->
 
-    <!-- --------------PORTFOLIO---------------- -->
-    <div id="portfolio">
-        <div class="portfolio-container">
-            <h1 style="font-family: 'Caveat', sans-serif; font-size: 75px; text-align: center; margin-top: -20px;">My Work</h1>
+    <!-- --------------PROJECTS---------------- -->
+    <div id="projects">
+        <div class="projects-container">
+            <h1 class="project">Projects</h1>
             <div class="work-list" style="margin-top: 15px;">
                 <div class="work">
                     <img src="img/Nature.jpg">
                     <div class="layer"> 
                         <h3>Social Media</h3>
-                        <p>adnwnfaojnfakjnfakjdnaknkjafnwjknfa</p>
+                        <p></p>
                         <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -293,7 +115,7 @@
                     <img src="img/Nature.jpg">
                     <div class="layer"> 
                         <h3>Social Media</h3>
-                        <p>adnwnfaojnfakjnfakjdnaknkjafnwjknfa</p>
+                        <p></p>
                         <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -301,7 +123,7 @@
                     <img src="img/Nature.jpg">
                     <div class="layer"> 
                         <h3>Social Media</h3>
-                        <p>adnwnfaojnfakjnfakjdnaknkjafnwjknfa</p>
+                        <p></p>
                         <a href=""><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -315,7 +137,7 @@
         <div class="contact-container">
             <div class="left-contact">
                 <div class="left-contact-container">
-                    <h1 class="contact-me">Contact Me @</h1>
+                    <h1 class="contact-me">Contacts</h1>
                     <div>
                         <div class="contact-flex" style="margin-top: 20px;">
                             <span class="material-icons icon">send</span>
@@ -341,7 +163,6 @@
                             </div>
                         </a>
                     </div>
-                    <button id="cv-btn" class="cv-btn">Download CV</button>
             </div>
             </div>
 
