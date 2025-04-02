@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/6f0f949a64.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- ---------HOME PAGE----------- -->
@@ -143,7 +144,6 @@
                     <div class="social-icons contact-flex">
                         <a href="https://www.linkedin.com/in/leonl-63616b272" class="icon">
                             <div class="contact-row">
-                                <i class="fab fa-linkedin"></i>
                                 <div class="linkedin-container">
                                     <p>LinkedIn</p>
                                 </div>
@@ -152,11 +152,12 @@
                     </div>
                 </div>
             </div>
-            <div class="right-contact">
-                <form action="/send-email" method="POST">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Email" style="margin-top: 2%;" required>
-                    <textarea name="Message" rows="10" placeholder="Your Message" style="margin-top: 2%;"></textarea>
+            <div class="right-contact" style="margin-left: 1.5vw;">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" style="margin-top: 2vh;" required>
+                    <input type="text" name="title" placeholder="Subject" style="margin-top: 2vh;" />
+                    <textarea name="message" rows="10" placeholder="Your Message" style="margin-top: 2vh;"></textarea>
                     <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </div>
@@ -164,6 +165,29 @@
         <div class="contact-fade"></div>
     </div>
 
+    <script>
+        emailjs.init("TJwOHYMeUm9Dvenl9");
+    
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+    
+            const lastSubmit = localStorage.getItem("lastSubmitTime");
+    
+            if (lastSubmit && Date.now() - lastSubmit < 60000) {
+                alert(" ❌ Wait a minute before submitting another message...");
+                return;
+            }
+    
+            emailjs.sendForm("service_fmnhmui", "template_igqtdbo", this)
+                .then(function() {
+                    alert("✅ Message sent!");
+                    localStorage.setItem("lastSubmitTime", Date.now()); // Set cooldown after successful send
+                }, function(error) {
+                    alert("❌ Failed to send message. Please try again.");
+                    console.log(error);
+                });
+        });
+    </script>  
     <script src="index.js"></script>
 </body>
 </html>

@@ -205,7 +205,7 @@ nav ul li a {
 /* ========== Project Section ========== */
 #projects {
     position: relative;
-    height: 150vh;
+    height: 145vh;
     background-color: #367e89;
 }
 
@@ -251,12 +251,10 @@ nav ul li a {
 }
 
 
-
-
 /* ========== Contact Section ========== */
 #contact {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     background-color: black;
 }
 
