@@ -10,6 +10,8 @@ body {
     background-color: lightgrey;
     color: white;
     overflow: auto;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 html {
@@ -107,7 +109,6 @@ nav ul li a {
     object-position: 40% 65%;
 }
 
-
 @keyframes fadeInLeft {
     0%{
         opacity: 0;
@@ -118,7 +119,6 @@ nav ul li a {
         transform: translateX(0);
     }
 }
-
 
 .portfolio {
     position: absolute;
@@ -210,7 +210,7 @@ nav ul li a {
 }
 
 .project {
-    color: black; 
+    color: black;
     font-size: 85px;
     text-align: center;
 }
@@ -235,6 +235,8 @@ nav ul li a {
 .work-list {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .work-fade {
@@ -263,6 +265,7 @@ nav ul li a {
     flex-direction: row;
     justify-content: space-between;
     padding: 50px;
+    flex-wrap: wrap;
 }
 
 .left-contact-container {
@@ -271,8 +274,9 @@ nav ul li a {
 
 .left-contact,
 .right-contact {
-    width: 50%;
+    width: 100%;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .contact-me {
@@ -281,7 +285,7 @@ nav ul li a {
 }
 
 .left-contact {
-    flex-basis: 35%;
+    flex-basis: 100%;
     margin-top: 5vh;
 }
 
@@ -313,10 +317,10 @@ nav ul li a {
 }
 
 .right-contact {
-    flex-basis: 70%;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
 }
 
 input {
@@ -387,4 +391,47 @@ textarea::placeholder {
     margin-top: 0.5vh;
     margin-left: -2.1vw;
     cursor: pointer;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .about-bullets,
+  .self-desc,
+  .about-sub {
+    margin-left: 5vw;
+    width: 90%;
+  }
+
+  .intro {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    font-size: 24px;
+  }
+
+  .circle-img {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+  }
+
+  .portfolio {
+    font-size: 15vw;
+    left: 5vw;
+  }
+
+  .project {
+    font-size: 12vw;
+  }
+
+  .submit-btn {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
 }
