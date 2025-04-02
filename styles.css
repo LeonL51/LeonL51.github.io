@@ -205,7 +205,7 @@ nav ul li a {
 /* ========== Project Section ========== */
 #projects {
     position: relative;
-    height: 100vh;
+    height: 150vh;
     background-color: #367e89;
 }
 
@@ -233,10 +233,8 @@ nav ul li a {
 }
 
 .work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    display: flex;
+    gap: 50px;
 }
 
 .work-fade {
@@ -249,48 +247,10 @@ nav ul li a {
 }
 
 .work:hover img {
-    transform: scale(1.1);
+    transform: scale(.85);
 }
 
-.work:hover.layer {
-    height: 100%;
-}
 
-.layer {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), yellow);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 0.5s;
-}
-
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.layer a {
-    margin-top: 20px;
-    color: red;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
 
 
 /* ========== Contact Section ========== */
@@ -423,18 +383,6 @@ textarea::placeholder {
 
 .social-icons {
     margin-top: 2vh;
-}
-
-.fab.fa-linkedin {
-    color: rgb(10, 102, 194);
-    font-size: 37.5px;
-    margin-left: -1.5px;
-    margin-right: 2vw;
-    border-radius: 10px;
-}
-
-.fab.fa-linkedin:hover {
-    color: white;
 }
 
 .linkedin-container {
